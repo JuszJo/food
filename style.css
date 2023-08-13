@@ -1,0 +1,69 @@
+:root {
+    --heading1: 96px;
+    --heading2: 64px;
+    --p-heading: 32px;
+    --p: 24px;
+    --link: 24px;
+    --p-p: 16px;
+    --primary: #F7A300;
+    --secondary: #F0F6F6;
+    --third: #507575;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+li {
+    list-style: none;
+}
+
+ul a {
+    font-size: var(--link);
+}
+
+button {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 0.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Judson;
+}
+
+h1 {
+    font-size: calc(var(--heading1) / 1.3);
+    font-weight: 600;
+}
+
+h2 {
+    font-size: calc(var(--heading2) / 1.3);
+}
+
+h4 {
+    font-size: calc(var(--p-heading) / 1.3);
+}
+
+p {
+    font-size: calc(var(--p) / 1.3);
+}
+
+.p-p {
+    font-size: calc(var(--p-p) / 1.3);
+}
+
+.flex {
+    display: flex;
+}
+
+.highlight {
+    color: var(--primary);
+}
