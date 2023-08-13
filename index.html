@@ -11,12 +11,12 @@
     <!-- <div id="bg-img-div"> -->
     <!-- <img src="/assets/bg.png" class="bg"/> -->
     <!-- </div> -->
-    <main>
+    <main id="main">
         <div id="bg-div">
             <div class="container">
                 <header>
                     <nav>
-                        <div id="nav div" class="flex">
+                        <div id="nav-div">
                             <div>
                                 <a href="#">
                                     <img id="logo" src="assets/logo.png" alt="logo">
@@ -24,10 +24,10 @@
                             </div>
                             <div id="link-div">
                                 <ul class="flex">
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">About</a></li>
-                                    <li><a href="#">Menu</a></li>
-                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#main">Home</a></li>
+                                    <li><a href="#about">About</a></li>
+                                    <li><a href="#menu">Menu</a></li>
+                                    <li><a href="#contact">Contact</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -36,10 +36,10 @@
                 <section>
                     <div class="div-padding">
                         <div>
-                            <div>
+                            <div id="hero-h1-div">
                                 <h1>Food As <span class="highlight">Rich</span> As Our History</h1>
                             </div>
-                            <div class="mt">
+                            <div id="hero-p-div" class="mt">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut 
                                     iaculis est. Nunc nibh est, iaculis at massa ut, 
                                     convallis consectetur nulla.
@@ -64,39 +64,41 @@
                 </section>
             </div>
         </div>
-        <section>
+        <section id="about">
             <div class="div-padding">
                 <div class="container">
-                    <div>
-                        <h4 class="highlight">About</h4>
-                    </div>
-                    <div class="mt">
-                        <h2>Lorem Ipsum</h2>
-                    </div>
-                    <div class="mt">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut iaculis est.
-                                Nunc nibh est, iaculis at massa ut, convallis consectetur nulla. Sed eu 
-                                enim sem. Praesent in lacus vel ligula maximus tincidunt et eu ante. 
-                                Suspendisse bibendum urna in finibus iaculis. Sed venenatis gravida massa,
-                                a varius nibh tincidunt ac.
-                        </p>
-                    </div>
-                    <div class="mt">
-                        <p>Sed non dapibus lectus. Etiam sit amet sem consectetur, egestas nibh sit amet,
-                                blandit justo. Maecenas convallis neque velit, auctor varius velit facilisis
-                                ut. Vivamus molestie ultrices leo pellentesque egestas. Suspendisse potenti.
-                                Nunc libero felis, accumsan quis tincidunt ac, vehicula a orci. 
-                                Nam efficitur quam a iaculis ullamcorper. Donec quis elementum nisi. 
-                                Maecenas turpis elit, vehicula eu venenatis ut, volutpat et leo.
-                        </p>
-                    </div>
-                    <div class="mt">
-                        <button>View Menu</button>
+                    <div id="about-inner-div">
+                        <div>
+                            <h4 class="highlight">About</h4>
+                        </div>
+                        <div class="mt">
+                            <h2>Lorem Ipsum</h2>
+                        </div>
+                        <div class="mt">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut iaculis est.
+                                    Nunc nibh est, iaculis at massa ut, convallis consectetur nulla. Sed eu 
+                                    enim sem. Praesent in lacus vel ligula maximus tincidunt et eu ante. 
+                                    Suspendisse bibendum urna in finibus iaculis. Sed venenatis gravida massa,
+                                    a varius nibh tincidunt ac.
+                            </p>
+                        </div>
+                        <div class="mt">
+                            <p>Sed non dapibus lectus. Etiam sit amet sem consectetur, egestas nibh sit amet,
+                                    blandit justo. Maecenas convallis neque velit, auctor varius velit facilisis
+                                    ut. Vivamus molestie ultrices leo pellentesque egestas. Suspendisse potenti.
+                                    Nunc libero felis, accumsan quis tincidunt ac, vehicula a orci. 
+                                    Nam efficitur quam a iaculis ullamcorper. Donec quis elementum nisi. 
+                                    Maecenas turpis elit, vehicula eu venenatis ut, volutpat et leo.
+                            </p>
+                        </div>
+                        <div class="mt">
+                            <button>View Menu</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section>
+        <section id="menu">
             <div id="menu-div" class="div-padding">
                 <div class="container">
                     <div>
@@ -111,7 +113,7 @@
                                 <span class="food-name">Lorem Ipsum</span>
                             </div>
                         </figure>
-                        <figure class="mt4">
+                        <figure>
                             <div class="food-img-div">
                                 <img src="./assets/f2.jpg" alt="food">
                             </div>
@@ -119,7 +121,7 @@
                                 <span class="food-name">Lorem Ipsum</span>
                             </div>
                         </figure>
-                        <figure class="mt4">
+                        <figure>
                             <div class="food-img-div">
                                 <img src="./assets/f3.jpg" alt="food">
                             </div>
@@ -127,7 +129,7 @@
                                 <span class="food-name">Lorem Ipsum</span>
                             </div>
                         </figure>
-                        <figure class="mt4">
+                        <figure>
                             <div class="food-img-div">
                                 <img src="./assets/f4.jpg" alt="food">
                             </div>
@@ -140,12 +142,12 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer id="contact">
         <section>
             <div id="footer-div" class="div-padding">
                 <div class="container">
                     <div style="text-align: center;">
-                        <h1>Want A Taste Of The <span class="highlight">Magic?</span></h1>
+                        <h1 style="font-size: 64px;">Want A Taste Of The <span class="highlight">Magic?</span></h1>
                     </div>
                     <div class="mt2" style="text-align: center;">
                         <p>Get in touch with us on these handles.</p>
