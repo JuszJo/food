@@ -71,6 +71,10 @@ p {
     margin-top: 1rem;
 }
 
+.mt2 {
+    margin-top: 4rem;
+}
+
 #logo {
     width: 32px;
 }
@@ -102,4 +106,14 @@ p {
     margin-top: 3rem;
     text-align: center;
     gap: 1.5rem;
+}
+
+#menu-div {
+    margin-top: 4rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#menu-div img {
+    width: 100%;
 }
