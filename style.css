@@ -96,6 +96,10 @@ p {
     margin-top: 4rem;
 }
 
+#nav-div {
+    padding-top: 1rem;
+}
+
 #logo {
     width: 32px;
 }
@@ -105,7 +109,7 @@ p {
 }
 
 #bg-div {
-    background-image: url(../assets/bg.png);
+    background-image: url(../assets/bg2.jpg);
     background-position: 60% 0;
     background-size: 300%;
     background-repeat: no-repeat;
@@ -138,7 +142,7 @@ p {
 }
 
 #about-inner-div {
-    max-width: 50rem;
+    max-width: 60rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -221,7 +225,6 @@ p {
     #nav-div {
         display: grid;
         grid-template: repeat(1, auto) / repeat(2, auto);
-        padding-top: 1rem;
     }
 
     ul {
@@ -229,7 +232,36 @@ p {
     }
 
     #bg-div {
-        background-size: 100%;
-        background-position: center;
+        background-size: cover;
+        background-position: 0 -40px;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    :root {
+        --div2: 1.1;
+    }
+
+    #hero-div {
+        margin-top: 2rem;
+    }
+
+    #hero-h1-div {
+        max-width: 35rem;
+    }
+
+    #hero-p-div {
+        max-width: 30rem;
+    }
+
+    #food-div {
+        grid-template: repeat(1, auto) / repeat(4, auto);
+        gap: 1rem;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .container {
+        max-width: 1200px;
     }
 }
