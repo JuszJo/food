@@ -8,6 +8,7 @@
     --primary: #F7A300;
     --secondary: #F0F6F6;
     --third: #507575;
+    --third2: #273d3d;
 }
 
 * {
@@ -139,4 +140,18 @@ p {
     border-bottom: 2px solid var(--primary);
     font-size: calc(var(--p) / 1.3);
     font-family: Montserrat;
+}
+
+#footer-div {
+    background-color: var(--third);
+    color: white;
+}
+
+#social-div {
+    justify-content: center;
+    gap: 4rem
+}
+
+#social-div img {
+    width: 32px;
 }
